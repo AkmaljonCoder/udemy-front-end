@@ -1,0 +1,291 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+body {
+  background-color: #C2C3C6;
+}
+
+.max-con {
+  width: 100%;
+}
+
+.backg {
+  height: 100vh;
+  background-image: url("../assets/hills.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.hero {
+  width: 100%;
+  height: 400px;
+  max-width: 1440px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.hero h1 {
+  color: #070A1C;
+  font-size: 100px;
+  font-weight: bold;
+  font-family: "Lobster", sans-serif;
+  margin-bottom: 30px;
+}
+.hero h2 {
+  font-size: 30px;
+  color: #070A1C;
+}
+
+.about {
+  margin: 60px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.about > div {
+  max-width: 900px;
+}
+.about > div h3 {
+  font-size: 40px;
+  font-family: "Anton";
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: #070A1C;
+}
+.about > div p {
+  font-size: 20px;
+  color: #070A1C;
+}
+
+.card-wrap {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.card-wrap h1 {
+  text-align: center;
+  font-size: 50px;
+  letter-spacing: 5px;
+  margin-left: 30px;
+  font-family: "anton";
+  text-transform: uppercase;
+  margin: 100px 0;
+}
+
+.resume {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards {
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  margin: 0 20px;
+}
+.cards h3 {
+  font-size: 30px;
+  font-family: "Anton";
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.cards img {
+  width: 60px;
+  height: 60px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.portfolio {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  margin: 100px auto;
+}
+.portfolio h1 {
+  text-align: center;
+  font-size: 50px;
+  letter-spacing: 5px;
+  margin-left: 30px;
+  font-family: "anton";
+  text-transform: uppercase;
+  margin: 100px 0;
+}
+
+.projects {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  width: 350px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  background-color: #C2C3C6;
+}
+.project-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+.project-card button {
+  width: 100%;
+  height: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 5px 5px 0 0;
+  background-color: #C2C3C6;
+  font-weight: 500;
+  color: #070A1C;
+  border: none;
+  transition: all ease 0.5s;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+.project-card:hover button {
+  height: 40px;
+}
+.project-card button:hover {
+  color: rgb(0, 183, 255);
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.contact h1 {
+  font-size: 50px;
+  font-family: "anton";
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.contact p {
+  font-size: 20px;
+  margin: auto;
+  margin-bottom: 20px;
+  text-align: center;
+  max-width: 500px;
+}
+.contact button {
+  margin-bottom: 20px;
+  width: 300px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: #070A1C;
+  color: white;
+  border: none;
+  text-transform: capitalize;
+  transition: all ease 0.3s;
+}
+.contact button:hover {
+  opacity: 0.7;
+}
+
+@media (max-width: 1024px) {
+  .about > div {
+    max-width: 600px;
+  }
+  .about > div h3 {
+    font-size: 30px;
+  }
+  .about > div p {
+    font-size: 15px;
+  }
+  .resume {
+    flex-direction: column;
+  }
+  .resume .cards {
+    max-width: 600px;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 50px;
+  }
+  .hero h2 {
+    font-size: 15px;
+  }
+  .about > div {
+    max-width: calc(100% - 60px);
+  }
+  .project-card {
+    margin-bottom: 30px;
+  }
+  .project-card button {
+    height: 40px;
+  }
+}
+@media (max-width: 425px) {
+  .backg {
+    background-position: left;
+  }
+  .cards {
+    max-width: calc(100% - 60px) !important;
+    align-items: start !important;
+    text-align: start !important;
+    margin: 60px 0;
+  }
+  .project-card {
+    margin-bottom: 30px;
+  }
+  .contact {
+    align-items: start;
+  }
+  .contact h1 {
+    font-size: 30px;
+    margin-left: 30px;
+  }
+  .contact p {
+    font-size: 15px;
+    max-width: none;
+    text-align: start;
+    max-width: calc(100% - 60px);
+    margin: 0;
+    margin-left: 30px;
+    margin-bottom: 20px;
+  }
+  .contact button {
+    width: 200px;
+    margin-left: 30px;
+  }
+}
+@media (max-width: 375px) {
+  .hero h1 {
+    font-size: 40px;
+  }
+  .hero h2 {
+    font-size: 15px;
+  }
+}/*# sourceMappingURL=style.css.map */
